@@ -1,0 +1,53 @@
+$kind: http-example
+request:
+  url: http://localhost:8080/api/courses
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \  \"title\": \"Osnovi moderne pčelarske prakse\",\r
+
+      \  \"description\": \"Sveobuhvatni kurs o rukovanju košnicama i zaštiti društava.\",\r
+
+      \  \"durationInWeeks\": 6,\r
+
+      \  \"category\": {\r
+
+      \    \"id\": 1\r
+
+      \  }\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: ""
+  headers:
+    vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    x-content-type-options: nosniff
+    x-xss-protection: "0"
+    cache-control: no-cache, no-store, max-age=0, must-revalidate
+    pragma: no-cache
+    expires: "0"
+    x-frame-options: DENY
+    content-type: application/json
+    transfer-encoding: chunked
+    date: Mon, 24 Aug 2026 04:17:21 GMT
+    keep-alive: timeout=60
+    connection: keep-alive
+  body:
+    type: json
+    content: |-
+      {
+        "id": 2,
+        "title": "Osnovi moderne pčelarske prakse",
+        "description": "Sveobuhvatni kurs o rukovanju košnicama i zaštiti društava.",
+        "durationInWeeks": 6,
+        "category": {
+          "id": 1,
+          "name": null,
+          "description": null
+        },
+        "lessons": null
+      }
+order: 1787545044182

@@ -1,0 +1,19 @@
+$kind: http-request
+description: ""
+url: http://localhost:8080/api/categories
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Osnove pčelarstva\",\r
+
+    \  \"description\": \"Uvodni kursevi za početnike u pčelarstvu i biologiju pčela.\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{supabase_service_role_api_key_16mr}}"
+examples: .resources/Create Category - Osnove.resources/examples
+order: 1787544742048

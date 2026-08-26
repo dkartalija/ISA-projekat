@@ -1,0 +1,27 @@
+$kind: http-request
+name: Create Lesson - Anatomija pčele - GET
+description: ""
+url: http://localhost:8080/api/lessons/1
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \  \"title\": \"Anatomija i biologija medonosne pčele\",\r
+
+    \  \"content\": \"Detaljan pregled građe tela matice, radilice i truta.\",\r
+
+    \  \"orderIndex\": 1,\r
+
+    \  \"course\": {\r
+
+    \    \"id\": 1\r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_16mr}}"
+order: 2047467681432454

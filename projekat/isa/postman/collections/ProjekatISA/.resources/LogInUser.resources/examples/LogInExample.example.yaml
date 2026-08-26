@@ -1,0 +1,37 @@
+$kind: http-example
+request:
+  url: http://localhost:8080/api/auth/login
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \  \"email\": \"akademija@example.com\",\r
+
+      \  \"password\": \"Password123!\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: ""
+  headers:
+    vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    x-content-type-options: nosniff
+    x-xss-protection: "0"
+    cache-control: no-cache, no-store, max-age=0, must-revalidate
+    pragma: no-cache
+    expires: "0"
+    x-frame-options: DENY
+    content-type: application/json
+    transfer-encoding: chunked
+    date: Mon, 24 Aug 2026 04:10:30 GMT
+    keep-alive: timeout=60
+    connection: keep-alive
+  body:
+    type: json
+    content: |-
+      {
+        "token": "eyJhbGciOiJIUzI1NiJ9.eyJmaXJzdE5hbWUiOiJNYXJrbyIsImxhc3ROYW1lIjoiTWFya292acSHIiwicm9sZSI6IlJPTEVfVVNFUiIsImlkIjo4LCJlbWFpbCI6ImFrYWRlbWlqYUBleGFtcGxlLmNvbSIsInN1YiI6ImFrYWRlbWlqYUBleGFtcGxlLmNvbSIsImlhdCI6MTc4NzU0NDYzMCwiZXhwIjoxNzg3NjMxMDMwfQ.99KEMW9U_qR7AXl24JQ4W0QhGDWt1S5m1V4SIU6x98g",
+        "expiresIn": 86400000
+      }
+order: 1787544633764

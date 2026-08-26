@@ -1,0 +1,92 @@
+$kind: http-example
+name: CategoryGET
+request:
+  url: http://localhost:8080/api/categories
+  method: GET
+  body:
+    type: json
+    content: "{\r
+
+      \  \"name\": \"Osnove pčelarstva\",\r
+
+      \  \"description\": \"Uvodni kursevi za početnike u pčelarstvu i biologiju pčela.\"\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: ""
+  headers:
+    vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    x-content-type-options: nosniff
+    x-xss-protection: "0"
+    cache-control: no-cache, no-store, max-age=0, must-revalidate
+    pragma: no-cache
+    expires: "0"
+    x-frame-options: DENY
+    content-type: application/json
+    transfer-encoding: chunked
+    date: Mon, 24 Aug 2026 04:27:14 GMT
+    keep-alive: timeout=60
+    connection: keep-alive
+  body:
+    type: json
+    content: |-
+      [
+        {
+          "id": 1,
+          "name": "Osnovno pčelarstvo",
+          "description": "Kursevi za početnike u pčelarenju.",
+          "courses": [
+            {
+              "id": 1,
+              "title": "Uvod u moderno pčelarstvo i rad sa LR košnicama",
+              "description": "Naučite osnove pčelarenja, odabir lokacije za pčelinjak, prolećni razvoj društava i pripremu za prvu pašu.",
+              "durationInWeeks": 4,
+              "category": {
+                "id": 1,
+                "name": "Osnovno pčelarstvo",
+                "description": "Kursevi za početnike u pčelarenju."
+              },
+              "lessons": [
+                {
+                  "id": 1,
+                  "title": "Anatomija i biologija medonosne pčele",
+                  "content": "Detaljan pregled građe tela matice, radilice i truta.",
+                  "orderIndex": 1
+                },
+                {
+                  "id": 2,
+                  "title": "Anatomija i biologija medonosne pčele",
+                  "content": "Detaljan pregled građe tela matice, radilice i truta.",
+                  "orderIndex": 1
+                },
+                {
+                  "id": 3,
+                  "title": "Anatomija i biologija medonosne pčele",
+                  "content": "Detaljan pregled građe tela matice, radilice i truta.",
+                  "orderIndex": 1
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "title": "Osnovi moderne pčelarske prakse",
+              "description": "Sveobuhvatni kurs o rukovanju košnicama i zaštiti društava.",
+              "durationInWeeks": 6,
+              "category": {
+                "id": 1,
+                "name": "Osnovno pčelarstvo",
+                "description": "Kursevi za početnike u pčelarenju."
+              },
+              "lessons": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Osnove pčelarstva",
+          "description": "Uvodni kursevi za početnike u pčelarstvu i biologiju pčela.",
+          "courses": []
+        }
+      ]
+order: 3505695879544480

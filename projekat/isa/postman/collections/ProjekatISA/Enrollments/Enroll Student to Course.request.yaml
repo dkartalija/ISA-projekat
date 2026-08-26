@@ -1,0 +1,31 @@
+$kind: http-request
+description: ""
+url: http://localhost:8080/api/enrollments/1
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \  \"enrolledAt\": \"2026-08-24T10:00:00\",\r
+
+    \  \"status\": \"ACTIVE\",\r
+
+    \  \"user\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"course\": {\r
+
+    \    \"id\": 1\r
+
+    \  }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_16mr}}"
+examples: .resources/Enroll Student to Course.resources/examples
+order: 1787545331717

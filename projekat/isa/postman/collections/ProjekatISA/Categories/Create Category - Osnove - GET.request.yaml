@@ -1,0 +1,19 @@
+$kind: http-request
+name: Create Category - Osnove - GET
+description: ""
+url: http://localhost:8080/api/categories
+method: GET
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Osnove pčelarstva\",\r
+
+    \  \"description\": \"Uvodni kursevi za početnike u pčelarstvu i biologiju pčela.\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{supabase_service_role_api_key_16mr}}"
+order: 3541489580295428

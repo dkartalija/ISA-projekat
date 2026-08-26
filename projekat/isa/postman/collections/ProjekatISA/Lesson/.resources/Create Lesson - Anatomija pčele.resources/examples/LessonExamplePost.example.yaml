@@ -1,0 +1,54 @@
+$kind: http-example
+request:
+  url: http://localhost:8080/api/lessons
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \  \"title\": \"Anatomija i biologija medonosne pčele\",\r
+
+      \  \"content\": \"Detaljan pregled građe tela matice, radilice i truta.\",\r
+
+      \  \"orderIndex\": 1,\r
+
+      \  \"course\": {\r
+
+      \    \"id\": 1\r
+
+      \  }\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: ""
+  headers:
+    vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    x-content-type-options: nosniff
+    x-xss-protection: "0"
+    cache-control: no-cache, no-store, max-age=0, must-revalidate
+    pragma: no-cache
+    expires: "0"
+    x-frame-options: DENY
+    content-type: application/json
+    transfer-encoding: chunked
+    date: Mon, 24 Aug 2026 04:20:10 GMT
+    keep-alive: timeout=60
+    connection: keep-alive
+  body:
+    type: json
+    content: |-
+      {
+        "id": 3,
+        "title": "Anatomija i biologija medonosne pčele",
+        "content": "Detaljan pregled građe tela matice, radilice i truta.",
+        "orderIndex": 1,
+        "course": {
+          "id": 1,
+          "title": null,
+          "description": null,
+          "durationInWeeks": null,
+          "category": null
+        }
+      }
+order: 1787545212176

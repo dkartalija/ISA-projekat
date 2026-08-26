@@ -1,0 +1,67 @@
+$kind: http-example
+request:
+  url: http://localhost:8080/api/enrollments
+  method: POST
+  body:
+    type: json
+    content: "{\r
+
+      \  \"enrolledAt\": \"2026-08-24T10:00:00\",\r
+
+      \  \"status\": \"ACTIVE\",\r
+
+      \  \"user\": {\r
+
+      \    \"id\": 1\r
+
+      \  },\r
+
+      \  \"course\": {\r
+
+      \    \"id\": 1\r
+
+      \  }\r
+
+      }"
+response:
+  statusCode: 200
+  statusText: ""
+  headers:
+    vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+    x-content-type-options: nosniff
+    x-xss-protection: "0"
+    cache-control: no-cache, no-store, max-age=0, must-revalidate
+    pragma: no-cache
+    expires: "0"
+    x-frame-options: DENY
+    content-type: application/json
+    transfer-encoding: chunked
+    date: Mon, 24 Aug 2026 04:23:38 GMT
+    keep-alive: timeout=60
+    connection: keep-alive
+  body:
+    type: json
+    content: |-
+      {
+        "id": 1,
+        "user": {
+          "id": 1,
+          "email": null,
+          "password": null,
+          "firstName": null,
+          "lastName": null,
+          "contactNumber": null,
+          "role": null
+        },
+        "course": {
+          "id": 1,
+          "title": null,
+          "description": null,
+          "durationInWeeks": null,
+          "category": null,
+          "lessons": null
+        },
+        "enrolledAt": "2026-08-24T10:00:00",
+        "status": "ACTIVE"
+      }
+order: 1787545420480
